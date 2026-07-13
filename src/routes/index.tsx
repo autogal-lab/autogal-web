@@ -1312,9 +1312,8 @@ function Heatmap() {
           </div>
         ))}
         {days.map((d, ri) => (
-          <>
+          <Fragment key={d}>
             <div
-              key={d}
               className="flex items-center text-[11px] font-semibold"
               style={{ color: INK_SOFT }}
             >
@@ -1330,7 +1329,7 @@ function Heatmap() {
                 }}
               />
             ))}
-          </>
+          </Fragment>
         ))}
       </div>
     </div>

@@ -360,9 +360,9 @@ function ProductPreview() {
           <div className="mb-1 text-[13px] font-medium" style={{ color: INK_SOFT }}>
             Buenos días
           </div>
-          <h3 className="text-[22px] font-bold tracking-tight" style={{ color: INK }}>
+          <h2 className="text-[22px] font-bold tracking-tight" style={{ color: INK }}>
             Esto es lo que Autogal ha gestionado este mes.
-          </h3>
+          </h2>
 
           <MetricRow />
 

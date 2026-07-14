@@ -1,0 +1,9 @@
+# Autogal
+
+> Plataforma inteligente de operaciones telefónicas: atiende llamadas, resuelve consultas y convierte la actividad telefónica en información operativa para el negocio.
+
+Autogal añade una capa adicional de atención telefónica que trabaja junto al equipo humano, gestionando la demanda que no llega a atenderse y ofreciendo inteligencia operativa sobre volumen, resultados y patrones de llamada.
+
+## Pages
+
+- [Inicio](/): Visión general del producto, capacidades, dashboard de inteligencia operativa y preguntas frecuentes.

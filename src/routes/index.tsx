@@ -51,8 +51,44 @@ export const Route = createFileRoute("/")({
           "Autogal · Plataforma inteligente de operaciones telefónicas",
       },
     ],
+    links: [{ rel: "canonical", href: "https://autogal.lovable.app/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "Autogal",
+          url: "https://autogal.lovable.app/",
+          description:
+            "Plataforma inteligente de operaciones telefónicas que atiende llamadas, resuelve consultas y convierte la actividad en información operativa.",
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: "Autogal",
+          url: "https://autogal.lovable.app/",
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: FAQS.map(([q, a]) => ({
+            "@type": "Question",
+            name: q,
+            acceptedAnswer: { "@type": "Answer", text: a },
+          })),
+        }),
+      },
+    ],
   }),
 });
+
 
 /* ---------- design tokens as JS ---------- */
 const BRAND = "oklch(0.52 0.13 245)";
@@ -360,9 +396,9 @@ function ProductPreview() {
           <div className="mb-1 text-[13px] font-medium" style={{ color: INK_SOFT }}>
             Buenos días
           </div>
-          <h3 className="text-[22px] font-bold tracking-tight" style={{ color: INK }}>
+          <h2 className="text-[22px] font-bold tracking-tight" style={{ color: INK }}>
             Esto es lo que Autogal ha gestionado este mes.
-          </h3>
+          </h2>
 
           <MetricRow />
 
